@@ -9,6 +9,6 @@ console.log(total);
 btnMain.addEventListener("click", () => {
   const billValue = Number(billAmount.value);
   const tipValue = Number(tipPercentage.value);
-  const totaleValue = billValue * (1 + tipValue);
+  const totaleValue = billValue * (1 + tipValue/100);
   totalPraice.textContent = totaleValue;
 });
